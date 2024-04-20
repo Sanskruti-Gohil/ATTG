@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html" />
+	<meta name="author" content="lolkittens" />
+
+	<title>MedTour-Login</title>
+
+  <link rel="stylesheet" type="text/css" href="css1.css"> 
+    
+    <style>
+
+  .button {
+    background-color: #07f10f;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 10px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 6px;
+  }
+
+  body {
+    background-image: url('bg1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+  }
+  </style>
+    
+</head>
+
+<body>
+<form action='userlogin.php' method="POST">
+<center>
+
+<marquee><h1 class="impact" style="color:black;"><b><i>MedTour</i></b></h1></marquee>
+
+<form  method="POST" action="userlogin.php">
+  <table align="center" cellpadding="10" style="border: 5px solid black; border-color: #000000">
+<!-- <tr><td><a href='index.html'></a></td></tr> -->
+
+
+<h1><b></b>Login</b></h1>
+<tr>
+<td>Select Usertype : </td>
+<td><select name="UType" style="width:255px; font-size:20px; option{min-width:500px;}">
+<option>User</option>
+<option>Hospital</option>
+<option>Doctor</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>Username/Email:</td><td><input type="text" name="nm" required=""></td>
+</tr>
+<tr>
+<td>Password:</td><td><input type="password" name="pswd" required=""></td>
+</tr>
+<tr>
+<td></td>
+<td align="right"><a href="#" class="forgotlink">forgot password?</a></td>
+</tr>
+<tr>
+  <td align="center"><input type="Submit" name="insert" value="Login" class="button"></td>
+  <td align="center"><a href="home.html" class="button2">Back</a></td>
+</tr>
+<tr>
+  <td colspan="2" align="center">Does not have an Account!<a href="registration.html">Signup</a></td>
+</tr>
+</table>
+</center>
+</form>
+</body>
+</html>

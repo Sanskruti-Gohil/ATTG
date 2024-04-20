@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedTour-Appointment</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <script type="text/javascript">
+        function validate()
+        {
+          var code=document.doctors.dcode.value;
+          var phone=document.doctors.phone.value;
+          //document.print(dcode);
+          //var upswd=document.doctors.pswd.value;
+          //var uname=/^[a-zA-Z ]*$/;
+         
+          //var unm=document.registration.nm.value.match(nm);
+          //var fnm=document.registration.fname.value.match(fname);
+          
+          
+          if(code.length<=6)
+          {
+              alert("Length of doctor code should be 6 characters!");
+              document.doctors.code.focus();
+              return false;
+          }
+          
+            
+          else if(phone.length<10 | phone.length > 10)
+          {
+              alert("Please Enter Mobile Number in at least 10 digits");
+              document.doctors.phone.focus();
+              return false;
+              
+          }
+          else
+          {
+              alert("Registration Scucees doc swam!!");
+              return false;
+          }                  
+        }
+      </script>
+
+</head>
+<body style="background-image: url('bg1.jpg');">
+    <div class="container">
+        <div class="row justify-content-center mt-5">
+            <div class="col -xs-12 col-sm-10 col-md-6 col-lg-5">
+                <div class="card">
+                    <div class="card-header" style="background-color: #0d6efd; color: white; text-align: center;">
+                        <h5 class="card-title">Appointment</h5>
+                    </div>
+                    <div class="card-body">
+                        <form name="appointments" action="Appointments.php" method="POST" onsubmit="return validate();">
+                            <div class="form-group">
+                                <a href="home.html" class="btn btn-outline-dark form-control">Back</a>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Patient Id</label>
+                                <input type="text" class="form-control" name="paid" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="">First Name</label>
+                                <input type="text" class="form-control" name="finm" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Last Name</label>
+                                <input type="text" class="form-control" name="lnm" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Address 1</label>
+                                <input type="text" class="form-control" name="addr1" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Address 2</label>
+                                <input type="text" class="form-control" name="addr2" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="">City</label>
+                                <input type="text" class="form-control" name="city" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Contact No.</label>
+                                <input type="text" class="form-control" name="contactno" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Appointment Date</label>
+                                <input type="text" class="form-control" name="appdt" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Appointment Time</label>
+                                <input type="text" class="form-control" name="apptm" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Appointment Status</label>
+                                <input type="text" class="form-control" name="appstus" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="Submit" class="btn btn-outline-primary form-control" name="insert" value="Make Appointment">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+</body>
+</html>

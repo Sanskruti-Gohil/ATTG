@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<center>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Details </title>
+    
+    
+    <meta http-equiv="content-type" content="text/html" />
+	<meta name="author" content="lolkittens" />
+
+	<title>Untitled 1</title>
+    
+    <meta http-equiv="content-type" content="text/html" />
+	<meta name="author" content="lolkittens" />
+
+	<title>Doctors Master Table</title>
+    
+    <meta http-equiv="content-type" content="text/html" />
+	<meta name="author" content="lolkittens" />
+
+	<title>Untitled 1</title>
+    
+    <meta http-equiv="content-type" content="text/html" />
+	<meta name="author" content="" />
+
+	<title>REGISTRATION</title>
+     <link rel="stylesheet" type="text/css" href="css.css" />
+    <style>
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+
+
+
+  <style>
+  body {
+    background-image: url(bg1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+  }
+  </style>
+  
+  
+
+    
+    <script type="text/javascript">
+      function validate()
+      {
+        var code=document.doctors.dcode.value;
+        var phone=document.doctors.phone.value;
+        //document.print(dcode);
+        //var upswd=document.doctors.pswd.value;
+        //var uname=/^[a-zA-Z ]*$/;
+       
+        //var unm=document.registration.nm.value.match(nm);
+        //var fnm=document.registration.fname.value.match(fname);
+        
+        
+        if(code.length<=6)
+        {
+            alert("Length of doctor code should be 6 characters!");
+            document.doctors.code.focus();
+            return false;
+        }
+        
+          
+        else if(phone.length<10 | phone.length > 10)
+        {
+            alert("Please Enter Mobile Number in at least 10 digits");
+            document.doctors.phone.focus();
+            return false;
+            
+        }
+        else
+        {
+            alert("Registration Scucees doc swam!!");
+            return false;
+        }
+        
+
+
+                
+      }
+    </script>
+  
+    
+
+</head>
+
+<body>
+    <form action="Hospitals.php" method="POST">
+        <table>
+            <caption>Hospital Details</caption>
+
+            
+            <tr>
+                <td>Hospital Code :</td>
+                <td><input type="text" name="hcode"></td>
+            </tr>
+            <tr>
+                <td>Hospital Name :</td>
+                <td><input type="text" name="hname" placeholder="Hospital Name" required></td>
+            </tr>
+            <tr>
+                <td>Hospital Address :</td>
+                <td><input type="type" name="haddr" placeholder="Hospital Address" required></td>
+            </tr>
+            <tr>
+                <td>Country:</td>
+                <td><input type="text" name="hcountry" placeholder="Country" required></td>
+            </tr>
+            <tr>
+                <td>Contact no. :</td>
+                <td><input type="number" name="hcont" placeholder="Contact No." required></td>
+            </tr>
+            <tr>
+                <td>Facilities :</td>
+                <td><input type="checkbox" name="fac[]" value="Private Rooms">Private Rooms</td>
+                <td><input type="checkbox" name="fac[]" value="Cafeteria/Restaurant">Cafeteria/Restaurant</td>
+                <td><input type="checkbox" name="fac[]" value="Pharmacy">Pharmacy</td>
+                <td><input type="checkbox" name="fac[]" value="Ambulance Facility">Ambulance Facility</td>
+                <td><input type="checkbox" name="fac[]" value="Internet Connection">Internet Connection</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="checkbox" name="fac[]" value="Money Exchange">Money Exchange</td>
+                <td><input type="checkbox" name="fac[]" value="Transportation service">Transportation services</td>
+                <td><input type="checkbox" name="fac[]" value="Flight arrangement">Flight arrangement</td>
+                <td><input type="checkbox" name="fac[]" value="Visa arrangement">Visa arrangement</td>
+            </tr>
+            <tr>
+                <td>Contact Person Name:</td>
+                <td><input type="text" name="hcontnm" placeholder="Contact Person Name" required></td>
+            </tr>
+            <tr>
+                <td>Contact Person:</td>
+                <td><input type="number" name="hcontper" placeholder="Mobile no." required></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center"><input type="submit" name="insert" value="Submit"></td>
+            </tr>
+            
+        </table>
+    </form>
+    </center>
+</body>
+<html>

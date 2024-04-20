@@ -1,0 +1,81 @@
+body
+{
+    text-align: center;
+    background-image: url('bg1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+    
+}
+
+
+h2{
+
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 40;
+
+}
+
+
+
+table
+{
+    text-align:left;
+    padding:50px;
+        background: rgb(167 157 118 / 87%);
+    border-radius: 6px;
+    
+}
+
+td
+{
+    font-style: italic;
+    color: white;
+    font-weight: bold;
+       
+}
+
+input{
+    font-style: italic;
+   
+    color: rgb(0, 0, 0);
+    size: 30;
+   
+}
+
+
+.submit {
+    background-color: #000;
+    border: none;
+    border-radius: 6px;
+    font-family: 'Arial Narrow', Arial, ;
+    text-align: center;
+    color: white;
+    padding: 10px 28px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+  
+  .button {
+    background-color: #000;
+    border: none;
+    border-radius: 6px;
+    font-family: 'Arial Narrow', Arial, ;
+    text-align: center;
+    color: white;
+    padding: 10px 40px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+  
+  
+  

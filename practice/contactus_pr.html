@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+<footer class="footer" id="contact">
+    <div class="contact-box">
+         <div class="contact-form-wrapper">
+          <form id="form">
+            <p class="form-txt">Feel free to drop a mail in case of any queries.</p>
+            <br/>
+            <div class="form-item">
+              <label>Name:</label>
+              <input type="text" name="sender" id="name" required>
+             
+            </div>
+            <div class="form-item">
+               <label>Email:</label>
+              <input type="text" name="email" id="email" required>
+              
+            </div>
+            <div class="form-item">
+               <label>Message:</label>
+              <textarea class="" name="message" id="msg" required></textarea>
+            </div>
+            <button class="submit-btn" type="button" onclick="sendMsg()">Send</button>  
+          </form>
+        </div>
+      </div>
+  </footer>
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+      <script type="text/javascript" src="./javascript.js"></script>
+</body>
+</html>

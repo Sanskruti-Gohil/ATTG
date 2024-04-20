@@ -1,0 +1,256 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html" />
+	<meta name="author" content="lolkittens" />
+
+	<title>Untitled 2</title>
+    
+    <meta http-equiv="content-type" content="text/html" />
+	<meta name="author" content="lolkittens" />
+
+	<title>Doctors Master Table</title>
+    
+    <meta http-equiv="content-type" content="text/html" />
+	<meta name="author" content="lolkittens" />
+
+	<title>Untitled 1</title>
+    
+    <meta http-equiv="content-type" content="text/html" />
+	<meta name="author" content="" />
+
+	<title>REGISTRATION</title>
+     <link rel="stylesheet" type="text/css" href="css.css" />
+    <style>
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+
+
+
+  <style>
+  body {
+    background-image: url(bg1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+  }
+  </style>
+  
+  
+
+    
+    <script type="text/javascript">
+      function validate()
+      {
+        var code=document.doctors.dcode.value;
+        var phone=document.doctors.phone.value;
+        //document.print(dcode);
+        //var upswd=document.doctors.pswd.value;
+        //var uname=/^[a-zA-Z ]*$/;
+       
+        //var unm=document.registration.nm.value.match(nm);
+        //var fnm=document.registration.fname.value.match(fname);
+        
+        
+        if(code.length<=6)
+        {
+            alert("Length of doctor code should be 6 characters!");
+            document.doctors.code.focus();
+            return false;
+        }
+        
+          
+        else if(phone.length<10 | phone.length > 10)
+        {
+            alert("Please Enter Mobile Number in at least 10 digits");
+            document.doctors.phone.focus();
+            return false;
+            
+        }
+        else
+        {
+            alert("Registration Scucees doc swam!!");
+            return false;
+        }
+        
+
+
+                
+      }
+    </script>
+  
+    
+</head>
+
+<body>
+
+<center>
+
+<marquee><h1 class="impact"style="color=black;"><b><i>MEDTOUR</i></b></h1></marquee>
+
+<h1 class="impact" style="color=black;"><b>BOOKING INFORMATION</b></h1>
+
+
+
+<form name="doctors" action="Bookings.php" method="POST" onsubmit="return validate();">
+<table align="center" cellpadding="10" bgcolor="white" style="border: 1px solid black" bordercolor="#D7DF01">
+
+<tr>
+<td >
+Date
+</td>
+<td>
+<input type="text" name="date" required="">
+</td>
+</tr>
+
+
+<tr>
+<td >
+Booking code
+</td>
+<td>
+<input type="text" name="bcode" required="">
+</td>
+</tr>
+
+<tr>
+<td >
+Full Name 
+</td>
+<td>
+<input type="text" name="fnm" required="">
+</td>
+</tr>
+
+<tr>
+<td>
+Phone Number
+</td>
+<td>
+<input type="text" name="phno" required="">
+</td>
+</tr>
+
+
+
+<tr>
+<td>
+Alternate Number
+</td>
+<td>
+<input type="text" name="altno" required=""> 
+</td>
+</tr>
+
+
+<tr>
+<td>
+Email
+</td>
+<td>
+<input type="email" name="email" required=""> 
+</td>
+</tr>
+
+
+<tr>
+<td>
+Relationship with patient
+</td>
+<td>
+<input type="text" name="relation" required="">
+</td>
+</tr>
+
+
+<tr>
+<td>
+ID Proof
+</td>
+<td><input type="text" name="id" required=""></td>
+</tr>
+
+
+
+<tr>
+<td>
+Number of people travelling 
+</td>
+<td> 
+<input type="text" name="ppltravel" required="">
+</td>
+</tr>
+
+
+
+<tr>
+<td>
+Package Code
+</td>
+<td>
+<input type="text" name="pcode" required="">
+</td>
+</tr>
+
+<tr>
+<td>
+Gender
+</td>
+<td>
+<input type="text" name="gndr" required="">
+</td>
+</tr>
+
+<tr>
+<td>
+Staying Time Period
+</td>
+<td>
+<input type="text" name="tmperiod" required="">
+</td>
+</tr>
+
+<tr>
+<td>
+Check-in Date
+</td>
+<td>
+<input type="text" name="chindate" required="">
+</td>
+</tr>
+
+<tr>
+<td>
+Check-out Date
+</td>
+<td>
+<input type="text" name="choutdate" required="">
+</td>
+</tr>
+
+<tr>
+<td>
+<input type="Submit" name="insert" value="Submit">
+</td>
+</tr>
+
+</table>
+</form>
+
+</center>
+
+
+</body>
+</html>

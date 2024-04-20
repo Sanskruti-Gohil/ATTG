@@ -1,0 +1,172 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html" />
+	<meta name="author" content="lolkittens" />
+
+	<title>Hotels</title>
+    
+	<link rel="stylesheet" type="text/css" href="css.css" />
+    <style>
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+
+
+
+  <style>
+  body {
+    background-image: url(bg1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+  }
+  </style>
+  
+  
+
+    
+    <script type="text/javascript">
+      function validate()
+      {
+        var code=document.doctors.dcode.value;
+        var phone=document.doctors.phone.value;
+        //document.print(dcode);
+        //var upswd=document.doctors.pswd.value;
+        //var uname=/^[a-zA-Z ]*$/;
+       
+        //var unm=document.registration.nm.value.match(nm);
+        //var fnm=document.registration.fname.value.match(fname);
+        
+        
+        if(code.length<=6)
+        {
+            alert("Length of doctor code should be 6 characters!");
+            document.doctors.code.focus();
+            return false;
+        }
+        
+          
+        else if(phone.length<10 | phone.length > 10)
+        {
+            alert("Please Enter Mobile Number in at least 10 digits");
+            document.doctors.phone.focus();
+            return false;
+            
+        }
+        else
+        {
+            alert("Registration Scucees doc swam!!");
+            return false;
+        }
+        
+
+
+                
+      }
+    </script>
+  
+</head>
+
+<body>
+
+<marquee><h1 class="impact"style="color=black;"><b><i>MEDTOUR</i></b></h1></marquee>
+
+<h1 class="impact" style="color=black;"><b>HOTELS</b></h1>
+
+
+
+<form name="hotels" action="hotels.php" method="POST" onsubmit="return validate();">
+<table align="center" cellpadding="10" bgcolor="white" style="border: 1px solid black" bordercolor="#D7DF01">
+
+<tr>
+<td >
+Hotel Code
+</td>
+<td>
+<input type="text" name="htcode" required="">
+</td>
+</tr>
+
+
+<tr>
+<td >
+Name
+</td>
+<td>
+<input type="text" name="nm" required="">
+</td>
+</tr>
+
+<tr>
+<td >
+Address
+</td>
+<td>
+<input type="text" name="addr" required="">
+</td>
+</tr>
+
+<tr>
+<td>
+Room Type
+</td>
+<td>
+<input type="text" name="rtype" required="">
+</td>
+</tr>
+
+
+<tr>
+<td>
+Charges
+</td>
+<td>
+<input type="text" name="chrgs" required=""> 
+</td>
+</tr>
+
+
+<tr>
+<td>
+Package Code
+</td>
+<td>
+<input type="text" name="pcode" required=""> 
+</td>
+</tr>
+
+
+<tr>
+<td>
+Checkout Time
+</td>
+<td>
+<input type="text" name="chkout" required=""> 
+</td>
+</tr>
+
+<tr>
+<td>
+<input type="Submit" name="insert" value="Submit">
+</td>
+</tr>
+
+</table>
+</form>
+
+</center>
+
+
+</body>
+</html>
